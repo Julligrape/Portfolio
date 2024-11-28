@@ -1,0 +1,140 @@
+body {
+  margin: 0 1rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background: linear-gradient(rgba(63, 2, 2, 0.5), rgba(69, 0, 0, 0.5)), 
+              url('https://img.freepik.com/free-vector/pattern-with-elegant-design_1048-12609.jpg');
+  background-attachment: fixed; /* Bakgrunden inte scrollar */
+  color: #F5F5DC;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  box-sizing: border-box;
+  
+} 
+  
+  /* Bilder */
+  .project img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover; /* För att bilderna ska beskäras och passa in i rutan */
+  }
+  
+  
+  
+  .project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centrera horisontellt */
+    gap: 30px; /* Utrymme mellan projekten */
+}
+
+  
+  .project {
+    background-color: rgba(0, 0, 0, 0.304); /* Halvtransparent bakgrund */
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 300px;
+  }
+  
+  /* Menyn */
+nav ul {
+  list-style: none; /* Ta bort punktlistor */
+  display: flex; /* Visa menyalternativen på en rad */
+  gap: 20px;
+  padding: 0;
+  justify-content: center; /* Centrera menyn horisontellt */
+}
+
+nav ul li a {
+  text-decoration: none; /* Ta bort understrykning */
+  color: #F5F5DC;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 5px 10px; /* Extra klickyta */
+}
+
+nav ul li a:hover {
+  color: #FFD700;
+}
+
+  
+  /* Media Queries */
+  @media (min-width: 768px) {
+    .project-container {
+      justify-content: space-around;
+    }
+    @media (max-width: 768px) {
+      nav ul {
+          flex-direction: column;
+          align-items: center;
+      }
+      }
+  }
+  
+
+/* Profilbild */
+.profile-img {
+  display: block;
+  width: 150px; 
+  height: 150px; 
+  border-radius: 50%; 
+  margin: 0 auto 20px;
+  border: 3px solid #F5F5DC;
+  object-fit: cover; /* Beskär och fyll ytan */
+}
+
+
+form {
+  display: flex;
+  flex-direction: column; /* Staplar vertikalt */
+  gap: 15px;
+  max-width: 500px;
+  margin: 0 auto; /* Centrerar horisontellt */
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px; /* Rundade hörn */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+input, textarea {
+  padding: 10px; /* Inre avstånd för fältet */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem; /* Anpassad textstorlek */
+  background-color: #F5F5DC;
+}
+
+button {
+  align-self: center;
+  padding: 10px 20px;
+  background-color: #530707;
+  color: #F5F5DC;
+  border: none; /* Tar bort standardkanten */
+  border-radius: 5px;
+  cursor: pointer; /* Ändrar muspekaren */
+}
+
+button:hover {
+  background-color: #690808;
+}
+
+/* Om mig */
+#about-me {
+  text-align: center;
+  padding: 20px;
+  max-width: 800px;
+  background-color: rgba(37, 2, 2, 0.329);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Aktiva länken i menyn */
+nav ul li a.active {
+  color: #FFD700;
+  text-decoration: underline;
+}
+header, footer {
+  width: 100%;
+  padding: 20px;
+  background-color: rgba(28, 4, 4, 0.384);}

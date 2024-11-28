@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Min Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="Portfolio.html" class="active">Hem</a></li>
+                <li><a href="about.html">Om Mig</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </nav>
+        
+        <h1>Välkommen till min portfolio</h1>
+    </header>
+    <main>
+        <section id="intro">
+            <p>Hej! Jag är nybörjad UX-designer som gillar att leka runt med figma och VS-code. Här är några av mina projekt!</p>
+        </section>
+        <section id="projects">
+            <h2>Projekt</h2>
+            <div class="project-container">
+                <div class="project">
+                    <img src="https://files.oaiusercontent.com/file-4H5peg1fXf1CqisGb2tXsC?se=2024-11-28T12%3A26%3A44Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D3177921c-98d1-4403-a3b2-4e6df9116069.webp&sig=j7BLYc4Dr8cgUtLrOrr/7dXyClLX/a/G8GazdaAXSik%3D">
+                    <h3>Transport-app</h3>
+                    <p>Designade en användarvänlig app för att boka och spåra transporter i realtid, med fokus på intuitiv navigering.</p>
+                </div>
+                <div class="project">
+                    <img src="https://files.oaiusercontent.com/file-3tfDGtcYL4JTua9NvFCJFx?se=2024-11-28T12%3A26%3A53Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D877f91ad-8e54-41fd-af0c-1faa7d405b46.webp&sig=RQuZ4DcVGFdX4s2f21QDJ9u02UXoHLQ0n%2B2g9hipx0s%3D">
+                    <h3>Konstplattform</h3>
+                    <p>Utvecklade en plattform för konstnärer där de kan sälja verk och skapa egna profiler.</p>
+                </div>
+                <div class="project">
+                    <img src="https://files.oaiusercontent.com/file-Kiq2MEvpBJm14frUPoUspR?se=2024-11-28T12%3A27%3A00Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D7de62eee-a98b-4e50-ab76-6365502c9f5d.webp&sig=Q7eLuHE/6jYWxaRgxhcS/NTZN895ZVE6Z6Wn0%2Bwd3ZY%3D">
+                    <h3>Musikevent-webbplats</h3>
+                    <p>Skapade en mobilvänlig webbplats för att hitta och köpa biljetter till konserter. Fokus på tillgänglighet och användarflöde.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section id="contact">
+            <h2>Kontakt</h2>
+            <form>
+                <label for="name">Namn:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">E-post:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Meddelande:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Skicka</button>
+            </form>
+            <p>&copy; 2024 Min Portfolio</p>
+        </section>
+    </footer>
+</body>
+</html>
